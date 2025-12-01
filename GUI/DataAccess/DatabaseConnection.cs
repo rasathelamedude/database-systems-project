@@ -1,21 +1,19 @@
 using Oracle.ManagedDataAccess.Client;
 using System;
+using System.Windows.Forms;
 
-namespace MedicalManagementSystem.DataAccess
+namespace GUI.DataAccess
 {
   public class DatabaseConnection
   {
     private static readonly string WalletLocation = @"C:\users\dell\desktop\db-project\wallet";
     private static readonly string TnsAdmin = @"C:\users\dell\desktop\db-project\wallet";
-
     private static readonly string DataSource = "h98hq2sct8lvcf7a_medium";
-
     private static readonly string UserId = "ADMIN";
     private static readonly string Password = "rocket12345@rasaTron";
 
     static DatabaseConnection()
     {
-      // Set wallet location
       OracleConfiguration.TnsAdmin = TnsAdmin;
       OracleConfiguration.WalletLocation = WalletLocation;
     }
@@ -34,14 +32,14 @@ namespace MedicalManagementSystem.DataAccess
         {
           conn.Open();
 
-          using (var cmd = new OracleCommand("SELECT 'Connected!' FROM DUAL", conn))
+          using (var cmd = new OracleCommand("SELECT 'Connected to Oracle Cloud!' FROM DUAL", conn))
           {
             var result = cmd.ExecuteScalar();
-            System.Windows.Forms.MessageBox.Show(
-                $"Database connection successful!\nResult: {result}",
-                "Success",
-                System.Windows.Forms.MessageBoxButtons.OK,
-                System.Windows.Forms.MessageBoxIcon.Information
+            MessageBox.Show(
+                $"✓ Database connection successful!\n\nResult: {result}",
+                "Connection Test",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
             );
           }
 
@@ -50,11 +48,15 @@ namespace MedicalManagementSystem.DataAccess
       }
       catch (Exception ex)
       {
-        System.Windows.Forms.MessageBox.Show(
-            $"Database connection failed!\n\nError: {ex.Message}",
+        MessageBox.Show(
+            $"✗ Database connection failed!\n\nError: {ex.Message}\n\nCheck:\n" +
+            "1. Wallet path in DatabaseConnection.cs\n" +
+            "2. DataSource name in tnsnames.ora\n" +
+            "3. ADMIN password is correct\n" +
+            "4. Oracle.ManagedDataAccess.Core package installed",
             "Connection Error",
-            System.Windows.Forms.MessageBoxButtons.OK,
-            System.Windows.Forms.MessageBoxIcon.Error
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Error
         );
         return false;
       }
