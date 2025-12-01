@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EVUAc0rGJsz0Y59eSoLabziLRwnDXlpsCygyoOGjzn7x225ojg6DPUXPZqXztTutXTOkASP5Rr1jSJj1MAMv5g==",
+  "dgSpecHash": "7vIn6cLWjZnNcrCl8niVdNFsn3fpoXmceJpbSnANL2pFL33iFKV2AHpi6hzUFnT6/+iw5BgxyWz0UUV9gmHASA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\Desktop\\db-project\\GUI\\GUI.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\Desktop\\db-project\\gui\\GUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\oracle.manageddataaccess.core\\23.26.0\\oracle.manageddataaccess.core.23.26.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
