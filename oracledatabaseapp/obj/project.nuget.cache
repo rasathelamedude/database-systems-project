@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "3foJRcreTn0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ramin\\RiderProjects\\oracledatabaseapp\\oracledatabaseapp\\oracledatabaseapp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ramin\\.nuget\\packages\\oracle.manageddataaccess\\23.26.0\\oracle.manageddataaccess.23.26.0.nupkg.sha512",
+    "C:\\Users\\ramin\\.nuget\\packages\\oracle.manageddataaccess.core\\23.26.0\\oracle.manageddataaccess.core.23.26.0.nupkg.sha512",
+    "C:\\Users\\ramin\\.nuget\\packages\\system.directoryservices.protocols\\8.0.2\\system.directoryservices.protocols.8.0.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Oracle.ManagedDataAccess 23.26.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\ramin\\RiderProjects\\oracledatabaseapp\\oracledatabaseapp\\oracledatabaseapp.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\ramin\\RiderProjects\\oracledatabaseapp\\oracledatabaseapp\\oracledatabaseapp.csproj",
+      "libraryId": "Oracle.ManagedDataAccess",
+      "targetGraphs": [
+        "net10.0-windows7.0"
+      ]
+    }
+  ]
+}
